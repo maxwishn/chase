@@ -3,8 +3,8 @@
 <head>
     <title>@ViewBag.Title</title>
 </head>
-<body>
-    <pre>
+<body style="background-color: #000000">
+    <pre style="color: #FFFFFF">
                                CHASE
                          CREATIVE COMPUTING
                        MORRISTOWN, NEW JERSEY
@@ -21,7 +21,12 @@
     10 = NO MOVE FOR THE REST OF THE GAME
     -1 = GAVE UP, SITUATION HOPELESS.
     0  = A TREMENDOUS (BUT UNFORTUNATELY RANDOM) LEAP
-    </pre>
+
     @RenderBody()
+    <form method="post" action="/">
+    > <input type="text" id="cli_input" name="cli_input" required minlength="1" maxlength="1" size="10" style="background-color: #000000; border: None; color: #FFFFFF"/>
+    </form>
+    </pre>
+    
 </body>
 </html>
