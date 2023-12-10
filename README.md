@@ -1,6 +1,26 @@
-# chase
+# Chase
 
-# Команды сборки
+CHASE отправит вас в лабиринт, состоящий из высоковольтных заборов и столбов. Само по себе это не так уж и неприятно, но есть еще пять роботов-перехватчиков, стремящихся только к одному — вашему уничтожению. Если эти роботы прикоснутся к вам… это конец игры (и вам!). Надежда одна — заставить роботов сталкиваться с лабиринтом или друг с другом (они как люди — иногда предпочитают побыть одни). Если вы уничтожите их всех, вы выиграете! Если вы оказались в совершенно безнадежной ситуации, у вас есть возможность совершить огромный прыжок в случайное место (которое вполне может быть на заборе или на охраннике).
+В конце игры вы можете переиграть с теми же или другими стартовыми условиями.<br><br>
+Считается, что эта игра была первоначально создана Маком Оглсби, затем она была модифицирована Биллом Коттером и улучшена Арнольдом Ловериджем. Промежуточная версия появилась в журнале Creative Computing в январе/феврале 1976 года.
 
-Для нужд разработки:
-"C:\Program Files\OneScript\bin\oscript.exe" -make chase.os chase.exe
+# Сборка
+Сборка осуществляется средствами makefie. Для сборки необходим движок OneScript.
+## Для Windows
+
+    make windows OSCRIPT_PATH="<some_path>\OneScript"
+
+## Для Linux
+
+    make linux OSCRIPT_PATH="<some_path>\OneScript"
+
+## Web-версия
+
+    make web WEB_ENGINE_PATH="<some_path>\osweb"
+
+# Ресурсы
+
+* [OneScript](https://github.com/EvilBeaver/OneScript) <br>
+* [OneScript Web](https://github.com/EvilBeaver/OneScript.Web)<br>
+* [Исходники Chase на Microsoft BASIC](https://www.roug.org/retrocomputing/languages/basic/morebasicgames/chase.bas) <br>
+* [Vintage BASIC для запуска оригинальной игры](http://www.vintage-basic.net/download.html)
